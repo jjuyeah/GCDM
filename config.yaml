@@ -1,0 +1,34 @@
+# settings
+device: cpu
+# dataset
+dataset: SD
+years: 2019
+periods: 12
+num_nodes: ???
+in_channels: 1
+# model hyperparameters
+pooler_ckpt: ???
+num_cnodes: 358
+topk: 12
+num_cond_blocks: 6
+num_noise_blocks: 8
+diff_steps: 200
+loss_type: l2
+beta_end: 0.1
+beta_schedule: quad
+hid_channels: 32
+eta: 1.0
+ema_decay: 0.99
+ema_update_after_step: 0
+ema_update_every: 5
+num_samples: 32
+samples_at_once: 32
+# train hyperparameters
+batch_size: 64
+epochs: 10000
+learning_rate: 1e-3
+weight_decay: 1e-6
+max_learning_rate: 1e-2
+criteria: mae
+patience: 50
+lmda: 1e-5
